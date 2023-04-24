@@ -1,0 +1,11 @@
+[
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "fuel_type_code": "CNG",
+    "zip": "60607",
+    "station_name": "Clean Energy - Yellow Cab",
+    "cards_accepted": "A D M V Voyager Wright_Exp CleanEnergy",
+    "street_address": "540 W Grenshaw"
+  }
+]
