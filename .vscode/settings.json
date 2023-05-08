@@ -1,0 +1,10 @@
+{"filewatcher.commands": [
+    {
+        "match": ".\\.hs",
+        "isAsync": false,
+        "cmd": "cd ${workspaceRoot} && cabal run",
+        "event": "onFileChange"
+    }		
+],
+"editor.formatOnSave": false
+}
