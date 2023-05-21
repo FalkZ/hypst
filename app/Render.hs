@@ -26,6 +26,10 @@ render t = case t of
   Heading nr content -> h nr content
   Paragraph content -> tagSimple "p" content
   Image url -> tag "img" "" [("src", url)]
+  UnorderedList content -> tagSimple "li" content
+  Style css -> tagSimple "style" css
+  Blockquote content -> tagSimple "blockquote" content
+  Include doc -> renderAll (content doc)
 
 renderAll :: [Tag] -> String
 renderAll doc =

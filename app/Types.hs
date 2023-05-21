@@ -4,6 +4,11 @@ data Tag
   = Heading Integer String
   | Paragraph String
   | Image String
+  | UnorderedList String
+  | Blockquote String
+  | Style String
+  | Include Document
+
 
 data Document = Document
   { name :: String,

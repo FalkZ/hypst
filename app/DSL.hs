@@ -20,4 +20,11 @@ import Types
 
 (§) doc str = doc & (Paragraph str)
 
+(-) doc str = doc & (UnorderedList str)
+
+(>) doc str = doc & (Blockquote str)
+
 img doc url = doc & Image url
+
+style doc css = doc & Style css
+include doc incl = doc & Include incl
