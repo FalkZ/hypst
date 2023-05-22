@@ -27,4 +27,6 @@ import Types
 img doc url = doc & Image url
 
 style doc css = doc & Style css
+
 include doc incl = doc & Include incl
+input doc incl = doc & Input incl

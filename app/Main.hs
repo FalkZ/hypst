@@ -24,12 +24,12 @@ main = do
   # "Idee: Hypst"
   > "Haskell basierte EDSL die das Verhalten von Typst imitiert"
 
-  ## "Aufbau"  
+  ## "Aufbau 2"  
 
   - "Infix Notation auf 'Dokument'"
   - "Deep Embedding"
   - "Pattern Matching für HTML Rendering"
 
-  `include` styles
+  `input` styles
 
   |> end_document

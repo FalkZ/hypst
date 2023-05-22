@@ -8,6 +8,7 @@ data Tag
   | Blockquote String
   | Style String
   | Include Document
+  | Input Document
 
 
 data Document = Document

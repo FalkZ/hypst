@@ -29,7 +29,8 @@ render t = case t of
   UnorderedList content -> tagSimple "li" content
   Style css -> tagSimple "style" css
   Blockquote content -> tagSimple "blockquote" content
-  Include doc -> renderAll (content doc)
+  Include doc -> (tagSimple "hr" "") ++ renderAll (content doc)
+  Input doc -> renderAll (content doc)
 
 renderAll :: [Tag] -> String
 renderAll doc =
