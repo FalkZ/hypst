@@ -1,0 +1,49 @@
+# Hypst
+
+> EDSL to create html documents in Haskell with a Markdown / Typst inspired syntax
+
+## Example
+This project allows the following haskell code:
+```haskell
+module Main where
+
+import Hypst
+import Prelude hiding ((+), (-), (>))
+import Styles (styles)
+
+
+main :: IO ()
+main = do 
+  document "build/index.html"
+  
+  # "Inspiration"
+
+  `img` "./typst.webp"
+
+  - "Alternative zu Latex"
+  - "Erinnert an Markdown"
+  - "Erlaubt Scripting:"
+
+  `img` "./scripting.png"
+
+  > "Typst ist eine DSL"
+
+  # "Idee: Hypst"
+  > "Haskell basierte EDSL die das Verhalten von Typst imitiert"
+
+  ## "Aufbau 2"  
+
+  - "Infix Notation auf 'Dokument'"
+  - "Deep Embedding"
+  - "Pattern Matching für HTML Rendering"
+
+  `input` styles
+
+  |> end_document
+```
+
+To be compiled into:
+
+```html
+
+```
